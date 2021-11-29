@@ -1,9 +1,8 @@
 import { useEffect, useState } from "react"
-
-
-
-
-
+import Link from 'next/link'
+import ImageComp from "./imagesHandler"
+import githubImage from './../public/images/github (1).png'
+import gameIcon from './../public/images/launcher icon.png'
 
 export default function Navbar(){
     const [navActive, setNavActive] = useState(false)
@@ -29,18 +28,41 @@ export default function Navbar(){
         <Button menu left fixed action={toggleSidebar} id="menu"/>
         <ul id="navbar" className="transition-all duration-300 fixed -translate-x-full md:translate-x-0 top-0 left-0 flex flex-col md:flex-row gap-4 w-3/4 md:w-full  h-screen md:h-auto z-50 bg-primary-medium md:bg-primary shadow-2xl  text-left pl-24 md:py-5 md:pr-10 md:justify-end">
         <Button action={toggleSidebar} id="close-menu"/>
-        <div className="invisible md:visible justify-self-start self-start place-self-start mr-auto">brand</div>
+        <div className="invisible md:visible justify-self-start self-start place-self-start mr-auto">
+            <div className="w-10 h-10 relative">
+                <ImageComp img={gameIcon}/>
+            </div>
+        </div>
             <li>
-                <a className="transition-all duration-399 pl-3 border-accent border-l-2 md:border-l-0 md:border-b-2 md:pl-0 border-opacity-0 hover:text-accent  hover:border-opacity-100" href="#home" onClick={toggleSidebar}>Home</a>
+                <a className="transition-all flex flex-row duration-399 md:border-l-0 md:border-b-2  border-opacity-0 hover:bg-green-600 rounded bg-green-500 px-5 py-2 text-center" href="https://github.com/SeptAlfauzan/Computer-Graphic-s-Project/releases/download/v1.1.0/TheDestituteSkelly.v1.1.0.zip" onClick={toggleSidebar} download>
+                Download
+                </a>
             </li>
             <li>
-                <a className="transition-all duration-399 pl-3 border-accent border-l-2 md:border-l-0 md:border-b-2 md:pl-0 border-opacity-0 hover:text-accent  hover:border-opacity-100" href="#progress" onClick={toggleSidebar}>Progress</a>
+                <a className="transition-all duration-399 pl-3 border-accent border-l-2 md:border-l-0 md:border-b-2 md:pl-0 border-opacity-0 hover:text-accent  hover:border-opacity-100" href="/#home" onClick={toggleSidebar}>Home</a>
             </li>
             <li>
-                <a className="transition-all duration-399 pl-3 border-accent border-l-2 md:border-l-0 md:border-b-2 md:pl-0 border-opacity-0 hover:text-accent  hover:border-opacity-100" href="#gameplay" onClick={toggleSidebar}>Gameplay</a>
+                <a className="transition-all duration-399 pl-3 border-accent border-l-2 md:border-l-0 md:border-b-2 md:pl-0 border-opacity-0 hover:text-accent  hover:border-opacity-100" href="/#progress" onClick={toggleSidebar}>Progress</a>
             </li>
             <li>
-                <a className="transition-all duration-399 pl-3 border-accent border-l-2 md:border-l-0 md:border-b-2 md:pl-0 border-opacity-0 hover:text-accent  hover:border-opacity-100" href="#about-us" onClick={toggleSidebar}>About Us</a>
+                <a className="transition-all duration-399 pl-3 border-accent border-l-2 md:border-l-0 md:border-b-2 md:pl-0 border-opacity-0 hover:text-accent  hover:border-opacity-100" href="/#gameplay" onClick={toggleSidebar}>Gameplay</a>
+            </li>
+            <li>
+                <a className="transition-all duration-399 pl-3 border-accent border-l-2 md:border-l-0 md:border-b-2 md:pl-0 border-opacity-0 hover:text-accent  hover:border-opacity-100" href="/#about-us" onClick={toggleSidebar}>About Us</a>
+            </li>
+            {/* <li>
+                <div className="transition-all duration-399 pl-3 border-accent border-l-2 md:border-l-0 md:border-b-2 md:pl-0 border-opacity-0 hover:text-accent  hover:border-opacity-100" onClick={toggleSidebar}>
+                    <Link href="/blogs">Blogs</Link>
+                </div>
+            </li> */}
+            <li>
+                <div className="transition-all duration-399 pl-3 border-accent border-l-2 rounded  md:border-2 md:pl-0 border-opacity-0 md:hover:scale-105  hover:border-opacity-100" onClick={toggleSidebar}>
+                    <a href="https://github.com/SeptAlfauzan/Computer-Graphic-s-Project" target="_blank" >
+                        <div className="w-10 h-10  relative bg-white rounded-full">
+                            <ImageComp img={githubImage}/>
+                        </div>
+                    </a>
+                </div>
             </li>
         </ul>
         </>
