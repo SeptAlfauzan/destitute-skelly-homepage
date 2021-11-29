@@ -29,8 +29,11 @@ export default function Navbar(){
         <ul id="navbar" className="transition-all duration-300 fixed -translate-x-full md:translate-x-0 top-0 left-0 flex flex-col md:flex-row gap-4 w-3/4 md:w-full  h-screen md:h-auto z-50 bg-primary-medium md:bg-primary shadow-2xl  text-left pl-24 md:py-5 md:pr-10 md:justify-end">
         <Button action={toggleSidebar} id="close-menu"/>
         <div className="invisible md:visible justify-self-start self-start place-self-start mr-auto">
+            <div className="flex flex-row">
             <div className="w-10 h-10 relative">
                 <ImageComp img={gameIcon}/>
+            </div>
+            <h3 className="text-3xl ml-2">The Destitute Skelly</h3>
             </div>
         </div>
             <li>
