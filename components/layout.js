@@ -31,7 +31,7 @@ export default function Layout({ children, title = "The Destitute Skelly" }) {
           </div>
           <div className="w-full md:w-1/3 mb-6">
             <h5 className="text-xl mb-4">Download dan mainkan sekarang!</h5>
-            <a className="transition-all duration-399 md:border-l-0 md:border-b-2  border-opacity-0 hover:bg-green-600 rounded bg-green-500 px-5 py-2 text-center" href="https://github.com/SeptAlfauzan/Computer-Graphic-s-Project/releases/download/v1.1.0/TheDestituteSkelly.v1.1.0.zip" download>Download</a>
+            <a className="transition-all duration-399 md:border-l-0 md:border-b-2  border-opacity-0 hover:bg-green-600 rounded bg-green-500 px-5 py-2 text-center" href="https://github.com/SeptAlfauzan/Computer-Graphic-s-Project/releases/download/v1.1.1/The.Destitute.Skellyv1.1.1.zip" download>Download</a>
           </div>
           <div className="w-full md:w-1/3 mb-6 justify-center">
             <h5 className="text-xl mb-4">Github kami</h5>
