@@ -37,7 +37,7 @@ export default function Navbar(){
             </div>
         </div>
             <li>
-                <a className="transition-all flex flex-row duration-399 md:border-l-0 md:border-b-2  border-opacity-0 hover:bg-green-600 rounded bg-green-500 px-5 py-2 text-center" href="https://github.com/SeptAlfauzan/Computer-Graphic-s-Project/releases/download/v1.1.1/The.Destitute.Skellyv1.1.1.zip" onClick={toggleSidebar} download>
+                <a className="transition-all  duration-399 md:border-l-0 md:border-b-2  border-opacity-0 hover:bg-green-600 rounded bg-green-500 px-5 py-2 text-center" href="https://github.com/SeptAlfauzan/Computer-Graphic-s-Project/releases/download/v1.1.1/The.Destitute.Skellyv1.1.1.zip" onClick={toggleSidebar} download>
                 Download
                 </a>
             </li>

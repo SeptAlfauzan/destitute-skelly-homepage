@@ -8,6 +8,7 @@ import HomeComp from '../components/home'
 import Aos from 'aos'
 import { useEffect } from 'react'
 import { getFilenames } from "../lib/blogs"
+import ModalProgress from '../components/ModalProgress'
 
 export default function Home(props) {
   

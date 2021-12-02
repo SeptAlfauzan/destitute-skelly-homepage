@@ -8,7 +8,7 @@ export default function HomeComp(){
     <div className="order-2 w-full md:order-1 md:w-2/5  font-light px-10 sm:px-20 mt-16 md:text-left md:pl-24">
       <div className="absolute invisible md:visible bg-primary-light w-1/4 h-2/4 top-1/4 left-0 opacity-20 rounded-lg"/>
       <p className="relative md:mt-36 z-10">
-        The Destitute Skelly merupakan sebuah game bergenre <i>action platformer</i> yang didalam game ini player akan memainkan karakter skelly dan player harus mengumpulkan semua koin pada setiap level untuk dapat melanjutkan ke level yang lebih tinggi.
+        The Destitute Skelly merupakan sebuah game bergenre <i>action 2D platformer</i> yang didalam game ini player akan memainkan karakter skelly dan player harus mengumpulkan semua koin pada setiap level untuk dapat melanjutkan ke level yang lebih tinggi.
       </p>
     </div>
     <div className="order-1 w-3/4 ml-auto md:order-2 md:w-3/5 md:h-full mt-10">

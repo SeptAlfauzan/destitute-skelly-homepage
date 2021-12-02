@@ -1,5 +1,29 @@
+import { useState } from "react"
+import ModalProgress from "./ModalProgress";
+
 export default function Progress(props){
-    console.log('data', props.progress_data)
+    console.log('data', Array.from(props.progress_data).length)
+    const dataActivations = Array.from(props.progress_data).map((data, index)=>{
+        return {id:index, active:false}
+    })
+    console.log(dataActivations)
+    if(props.progress_data == null) return null;
+    // const lenProgress = props.progess
+    const [progressModals, setProgressModals] = useState(dataActivations)
+
+    const [modalActive, setmodalActive] = useState(null)
+    const activateModal = (index) => {
+        setmodalActive(index)
+    }
+    const closeModal = () => {
+        setmodalActive(null)
+    }
+
+    const shorten = (str, len) => {
+        if(str.length <= len) return str
+        return str.substr(0, str.lastIndexOf(' ', len))
+    }
+
     return(
         <>
             <ul className="flex flex-col">
@@ -10,9 +34,17 @@ export default function Progress(props){
                         <p className="font-light  text-left text-accent">
                         {progess.date} 
                         </p>
-                        <p className="font-light  text-left text-gray-300">
+                        <p className="text-left text-lg text-gray-300 mb-3">
+                        {progess.title} 
+                        </p>
+                        <p className="font-light  text-left text-gray-300 md:block hidden">
                         {progess.content} 
                         </p>
+                        <p className="font-light  text-left text-gray-300 md:hidden">
+                        {shorten(progess.content, 100)} ...
+                        <button className="text-blue-400" onClick={() => activateModal(index)}>click more</button>
+                        </p>
+                        <ModalProgress key={index} title={progess.title} content={progess.content} isActive={index == modalActive} handleCloseModal={closeModal}/>
                     </div>
                 </li>
                 )
