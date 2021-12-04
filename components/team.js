@@ -1,4 +1,4 @@
-import indraImg from './../public/images/team/nadindra.png'
+import indraImg from './../public/images/team/indra2.jpeg'
 import sandyImg from './../public/images/team/sandy.jpeg'
 import septaImg from './../public/images/team/septa.jpg'
 import zahraImg from './../public/images/team/zahra.png'
@@ -46,6 +46,6 @@ export default function Team(){
             </p>
           </div>
         </div>
-      </div>
+       </div>
     )
 }
