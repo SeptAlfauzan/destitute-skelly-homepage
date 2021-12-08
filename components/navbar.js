@@ -51,6 +51,9 @@ export default function Navbar(){
                 <a className="transition-all duration-399 pl-3 border-accent border-l-2 md:border-l-0 md:border-b-2 md:pl-0 border-opacity-0 hover:text-accent  hover:border-opacity-100" href="/#gameplay" onClick={toggleSidebar}>Gameplay</a>
             </li>
             <li>
+                <a className="transition-all duration-399 pl-3 border-accent border-l-2 md:border-l-0 md:border-b-2 md:pl-0 border-opacity-0 hover:text-accent  hover:border-opacity-100" href="/#instalation" onClick={toggleSidebar}>Instalation</a>
+            </li>
+            <li>
                 <a className="transition-all duration-399 pl-3 border-accent border-l-2 md:border-l-0 md:border-b-2 md:pl-0 border-opacity-0 hover:text-accent  hover:border-opacity-100" href="/#about-us" onClick={toggleSidebar}>About Us</a>
             </li>
             {/* <li>

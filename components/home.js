@@ -24,7 +24,7 @@ export default function HomeComp(){
       </div>
       <div className="relative w-full h-64 md:h-3/4 overflow-hidden top-8">
         <div className="absolute bg-gray-800  rounded shadow-lg inset-0 -right-10 text-right" data-aos="fade-zoom-in" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-duration="600">
-          {/* <ImageComp img={img1} /> */}
+         
           <video className="w-full h-full object-cover" autoPlay loop   muted>
             <source src="https://res.cloudinary.com/dsclsqamv/video/upload/v1638152758/2021-11-28_20-42-57_online-video-cutter.com_1_sw5vek.mp4" type="video/mp4"/>
           </video>
